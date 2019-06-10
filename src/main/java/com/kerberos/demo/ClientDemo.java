@@ -37,6 +37,9 @@ public class ClientDemo {
 
         Oid krb5Oid = new Oid("1.2.840.113554.1.2.2");
 
+        //通用安全服务API(Generic Security Services API, GSS-API)是由因特网工程小组(IETF)开发的一套标准API,
+        // 以提供支持各种可插人安全机制的通用认证和安全消息接口。
+        // GSS-API还允许使用通用接口开发应用认证，从而将用户同底层安全机制隔离开。
         GSSManager manager = GSSManager.getInstance();
 
         GSSName serverName = manager.createName(server, null);
